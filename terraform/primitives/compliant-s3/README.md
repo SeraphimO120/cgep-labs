@@ -1,0 +1,3 @@
+# Compliant S3 Primitive
+
+This module deploys a single Amazon S3 bucket with a dedicated access-log bucket and enforces five NIST SP 800-53 controls: SC-28 (AES-256 server-side encryption at rest), AU-3 and AU-6 (access logging to a separate, encrypted log bucket), CM-6 (versioning plus four required compliance tags applied through provider default tags), and AC-3 (all four S3 public access block settings enabled). Machine-readable evidence for each control is captured as Terraform plan and state JSON in `evidence/lab-2-3/`.
